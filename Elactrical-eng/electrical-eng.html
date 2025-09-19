@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Donatus-Izeh | Electrician & Instructor</title>
+    <link rel="stylesheet" href="don.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Mr. Donatus-Izeh</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero fade-in">
+        <h1>Reliable Electrical Solutions & Training</h1>
+        <p>Professional Electrician & Electrical Engineering Instructor</p>
+        <div class="hero-buttons">
+            <button onclick="scrollToSection('contact')">Hire Me</button>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about fade-in">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Mr. Donatus-Izeh</strong>, a certified electrician with years of experience in electrical installation, repairs, and maintenance. 
+        I also teach <strong>Electrical Engineering</strong> and hold a certificate in <strong>Telecommunication</strong>. 
+        My mission is to provide reliable electrical solutions and empower students through quality education.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services fade-in">
+        <h2>Services</h2>
+        <div class="service-container">
+            <div class="service-card hover-effect">
+                <h3>Electrical Installation & Repairs</h3>
+                <p>Professional wiring, troubleshooting, and maintenance for homes and businesses.</p>
+            </div>
+            <div class="service-card hover-effect">
+                <h3>Electrical Engineering Training</h3>
+                <p>Comprehensive classes for students and technicians on electrical systems and telecommunication basics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery fade-in">
+        <h2>Project Gallery</h2>
+        <div class="gallery-container">
+            <img src=".//download (5).jpeg" alt="Project 1" onclick="openLightbox(this)">
+            <img src="./Electrical Motors Basic Components ~ Electrical Knowhow.jpeg" alt="Project 2" onclick="openLightbox(this)">
+            <img src="./Jaha sent you a Pin!.jpeg" alt="Project 3" onclick="openLightbox(this)">
+            <img src="images/work4.jpg" alt="Project 4" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- Lightbox Popup -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials fade-in">
+        <h2>What My Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Mr. Donatus is a true professional. He fixed my electrical issues quickly and safely!"</p>
+                <h4>- Grace O.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I learned so much in his electrical engineering class. Highly recommended!"</p>
+                <h4>- Chinedu A.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Best electrician and teacher I’ve worked with. Knowledgeable and friendly!"</p>
+                <h4>- Sarah I.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+        <p>Phone: <a href="tel:+2347032476877">07032476877</a></p>
+        <form id="contactForm">
+            <p>G.Mail: <a href="mail:+">donizeh@gmail.com</a></p>
+        <form id="contactForm">
+            
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mr. Donatus-Izeh | All Rights Reserved</p>
+    </footer>
+
+    
+</body>
+</html>
